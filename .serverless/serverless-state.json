@@ -174,7 +174,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/serverless-express-backend-chatbot/dev/1695267407396-2023-09-21T03:36:47.396Z/serverless-express-backend-chatbot.zip"
+                "S3Key": "serverless/serverless-express-backend-chatbot/dev/1695295590611-2023-09-21T11:26:30.611Z/serverless-express-backend-chatbot.zip"
               },
               "Handler": "handler.ask",
               "Runtime": "nodejs16.x",
@@ -192,14 +192,14 @@
               "AskLogGroup"
             ]
           },
-          "AskLambdaVersionrpp6Bg0H1Rs14Xd9bNWy5QAdTZpjbECWBd0VtHZ2dA": {
+          "AskLambdaVersionzA42c9mus2sYNuiI4NMVoOO3QzghfXSfhA5JqslScY": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "AskLambdaFunction"
               },
-              "CodeSha256": "lmQAhIuT+Lc/7gp8/fP0kDTO5beuxVxvOsXtzXok2IU="
+              "CodeSha256": "jEm8jYVFSx2+FfoDbvy+lBPIOwMsbGTUDbvDk3d3R1g="
             }
           },
           "ApiGatewayRestApi": {
@@ -287,7 +287,7 @@
               "AskLambdaPermissionApiGateway"
             ]
           },
-          "ApiGatewayDeployment1695267405339": {
+          "ApiGatewayDeployment1695295588420": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -349,7 +349,7 @@
           "AskLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "AskLambdaVersionrpp6Bg0H1Rs14Xd9bNWy5QAdTZpjbECWBd0VtHZ2dA"
+              "Ref": "AskLambdaVersionzA42c9mus2sYNuiI4NMVoOO3QzghfXSfhA5JqslScY"
             },
             "Export": {
               "Name": "sls-serverless-express-backend-chatbot-dev-AskLambdaFunctionQualifiedArn"
@@ -486,7 +486,7 @@
         "timeout": 6,
         "runtime": "nodejs16.x",
         "vpc": {},
-        "versionLogicalId": "AskLambdaVersionrpp6Bg0H1Rs14Xd9bNWy5QAdTZpjbECWBd0VtHZ2dA"
+        "versionLogicalId": "AskLambdaVersionzA42c9mus2sYNuiI4NMVoOO3QzghfXSfhA5JqslScY"
       }
     },
     "configValidationMode": "warn",
@@ -505,7 +505,7 @@
     "artifact": "/Users/kevin/serverless-express-backend-chatbot/.serverless/serverless-express-backend-chatbot.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/serverless-express-backend-chatbot/dev/1695267407396-2023-09-21T03:36:47.396Z",
+    "artifactDirectoryName": "serverless/serverless-express-backend-chatbot/dev/1695295590611-2023-09-21T11:26:30.611Z",
     "artifact": "serverless-express-backend-chatbot.zip"
   }
 }
