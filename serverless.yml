@@ -1,0 +1,12 @@
+service: serverless-express-backend-chatbot
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+
+functions:
+  ask:
+    handler: handler.ask
+    events:
+      - http: /api/ask
+        method: post
