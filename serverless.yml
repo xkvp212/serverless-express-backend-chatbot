@@ -13,3 +13,18 @@ functions:
       - http:
           path: /api/ask
           method: post
+
+apiKeys:
+  myApiKey: openAi-key-chatbot
+
+usagePlan:
+  name: myUsagePlan
+  throttle:
+    rateLimit: 10
+    burstLimit: 5
+  quota:
+    limit: 1000
+    offset: 2
+
+plugins:
+  - serverless-aws-documentation
