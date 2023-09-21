@@ -3,6 +3,8 @@ service: serverless-express-backend-chatbot
 provider:
   name: aws
   runtime: nodejs16.x
+  stage: dev
+  region: ap-southeast-2
 
 functions:
   ask:
