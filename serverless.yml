@@ -10,5 +10,6 @@ functions:
   ask:
     handler: handler.ask
     events:
-      - http: /api/ask
-        method: post
+      - http:
+          path: /api/ask
+          method: post
